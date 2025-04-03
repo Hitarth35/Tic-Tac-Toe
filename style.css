@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#turn{
+	height: 30vh;
+	width: 30vh;
+	position: absolute;
+	top: 35vh;
+	left: 10vw;
+	/* outline: 2px solid red; */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+table{
+	background-color: rgb(127, 255, 212);
+	height: 90vh;
+	width: 90vh;
+	border-collapse: collapse;
+}
+
+td, th{
+	border: 2px solid black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
