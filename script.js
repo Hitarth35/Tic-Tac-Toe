@@ -38,6 +38,7 @@ setTimeout(() => {
 	alert("Draw!");
 	restartGame();
 }, 100); 
+return;
 }
 
 function winCheck(state) {
