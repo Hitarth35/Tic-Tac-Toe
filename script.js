@@ -58,9 +58,10 @@ function winCheck(state) {
 
 		if(state[0][i] == turn && state[1][i] == turn && state[2][i] == turn){
 			win(turn);
+			return;
 		}
 	}
-	
+	drawCheck(state);
 
 }
 
@@ -90,7 +91,7 @@ function restartGame() {
         state = [
             ["", "", ""],
             ["", "", ""],
-			["", "", ""]
+		["", "", ""]
         ];
         document.querySelectorAll('.square').forEach(element => {
             element.style.backgroundImage = "";
@@ -123,7 +124,6 @@ document.querySelectorAll('.square').forEach(element => {
 			state[row][column] = turn;
 			console.log(state[row][column]);
 			winCheck(state);
-			drawCheck(state);
 			setTimeout(() => {
 				turnChange();
 			}, 100);
