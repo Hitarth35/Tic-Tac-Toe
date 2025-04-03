@@ -66,17 +66,17 @@ function winCheck(state) {
 }
 
 function drawCheck(state){
-	let draw = true;
+	let isDraw = true;
 
 	for(let i = 0; i < 3; i++){
 		for(let j = 0; j < 3; j++){
 			if(state[i][j] == ""){
-				draw = false;
+				isDraw = false;
 				break;
 			}
 		}
 	}
-	if(draw == true){
+	if(isDraw == true){
 		draw();
 		return;
 	}
